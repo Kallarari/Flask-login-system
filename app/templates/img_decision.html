@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Picture upload</title>
+</head>
+<div class="login">
+        <img class="profile" src="../static/img/{{ img }}" alt="Sua foto de perfil!">
+        <form method=post enctype=multipart/form-data>
+            <input class="file" type=file name=file required="required" />
+            <button type="submit" class="botao">Atribuir foto</button>
+            <h1 style="color: red;" id="demo"></h1>
+        </form>
+    <script>
+        const paragraph = document.getElementById('demo');
+        var login = ('{{ error }}');
+        paragraph.textContent = (login);
+    </script>
+    <a class="register" href="./">continuar</a>
+</div>

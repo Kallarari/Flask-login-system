@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Login</title>
+</head>
+<div class="login">
+    <form method="post">
+        <img class="logo" src="../static/img/logo.png" alt="Sua logo aqui!">
+        <input type="text" name=username placeholder="Username" required="required" />
+        <input type="password" name=password placeholder="Password" required="required" />
+        <h1 style="color: red;" id="demo"></h1>
+        <button type="submit" class="botao">Login</button>
+    </form>
+    <script>
+        const paragraph = document.getElementById('demo');
+        var login = ('{{ error }}');
+        paragraph.textContent = (login);
+    </script>
+    <a class="register" href="./register.html">Registrar-se</a>
+</div>
